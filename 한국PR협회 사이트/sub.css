@@ -1,0 +1,31 @@
+.tabmenu{
+    display: inline-block;
+    background: skyblue;
+    margin-left: 50px;
+    position: relative;
+}
+.tabmenu a{
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;  
+}
+.tabmenu:hover{
+    font-size: 0;
+}
+.about a:hover::before{
+    content: "ABOUT";
+    font-size: 16px;
+    color: gray;
+}
+.tabcontent{
+    display: none;
+    background-color: blue;
+    width: 100px;
+    position: absolute;
+}
+.menu:hover .tabcontent{
+    display: block;
+}
+.tabcontent a{
+    display: block;   
+}

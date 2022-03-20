@@ -1,0 +1,81 @@
+.below .menu ul{
+    display: inline;
+    /*height: 50px;*/  
+    float: right;
+    /*padding-top: 25px;
+    font-size: 11px;
+    margin-right: 105px;
+    box-sizing: border-box; */
+}
+.menu .about{
+    /* position: relative; */
+}
+.menu a {
+    font-weight: bold;
+    font-size: 11px;
+    color: inherit;
+    text-decoration: inherit;
+    /* margin-left: 40px; */
+}
+.menu li /*메뉴태그 안에 모든 li*/{
+    /* margin-left: 40px;
+    border: 1px solid red;
+    display: none;
+    position: absolute; */
+}
+.menu > .about > a:hover/*마우스를 협회안내에 올렸을 때*/{
+    /* font-size: 0; */
+}
+.menu .about a:hover::before{
+    /* content: "ABOUT";
+    font-size: 11px;
+    color: gray; */
+}
+.menu .about a:hover li {
+    /* display: block; */
+}
+.pr_awards a:hover{
+    font-size: 0;
+}
+.pr_awards a:hover::before{
+    content: "PR AWARDS";
+    font-size: 11px;
+    color: gray;
+}
+.career a:hover{
+    font-size: 0;
+}
+.career a:hover::before{
+    content: "CAREER";
+    font-size: 11px;
+    color: gray;
+}
+.news a:hover{
+    font-size: 0;
+}
+.news a:hover::before{
+    content: "NEWS ROOM";
+    font-size: 11px;
+    color: gray;
+}
+.library a:hover{
+    font-size: 0;
+}
+.library a:hover::before{
+    content: "LIBRARY";
+    font-size: 11px;
+    color: gray;
+}
+.membership a:hover{
+    font-size: 0;
+}
+.membership a:hover::before{
+    content: "MEMBERSHIP";
+    font-size: 11px;
+    color: gray;
+}
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: block;
+}
