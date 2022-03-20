@@ -1,11 +1,10 @@
-body{
+body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-header {
-}
-header .top {
+  }
+  
+  header .top {
     background-color: cornflowerblue;
     align-items: center;
     justify-content: center;
@@ -14,90 +13,83 @@ header .top {
     padding-bottom: 13px;
     font-weight: bold;
     font-size: 11px;
-    
-}
-header .top > a{
+  }
+  header .top > a {
     color: inherit;
     text-decoration: inherit;
     font-weight: bold;
-}
-header .bottom {
-    background-color: lightcyan;
+  }
+  header .bottom {
+    background-color: lightgray;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-header .container_left{
+  }
+  header .container_left {
     width: 30%;
     float: left;
     padding-top: 3px;
     margin-left: 50px;
-}
-header .container_left .headerlogo{
+  }
+  header .container_left .headerlogo {
     width: 15px;
     height: 15px;
     border-radius: 5px;
     margin-left: 15px;
-}
-header .container_right{
+  }
+  header .container_right {
     width: 200px;
     float: right;
     margin-right: 50px;
-}
-.container_right > a{
+  }
+  .container_right > a {
     color: inherit;
     text-decoration: inherit;
     font-weight: bold;
-}
-header .create {
+  }
+  header .create {
     font-size: 9px;
     padding-left: 50px;
-}
-header .login {
+  }
+  header .login {
     font-size: 9px;
     margin-left: 20px;
-}
-
-/* 여기가 베이지 색 부분 입니다. */
-header .below{
-    border-bottom: 1px solid gray;
+  }
+  
+  /* 여기가 베이지 색 부분 입니다. */
+  
+  header .below {
+    border-bottom: 1px solid lightgray;
     background-color: white;
-    
-}
-.below .pr_logo{
+  }
+  .below .pr_logo {
     width: 110px;
     height: 50px;
     margin-left: 70px;
     justify-content: center;
     align-items: center;
     padding: 5px 0px 5px 0px;
-}
-.menu{
+  }
+  .menu {
     display: inline-block;
     width: 900px;
     background-color: white;
     margin-right: 80px;
-    margin-top: 20px;
+    padding-top: 20px;
     float: right;
-    position: relative;
-    
-  
-}
-/* 여기서 부터 구조를 다시짜시오 */
-.tabmenu{
+  }
+  /* 여기서 부터 구조를 다시짜시오 */
+  .tabmenu {
     display: inline-block;
     background: white;
-    margin-left: 5px;
-}
-.tabmenu>a{
-    background-color: white;
-    display: inline-block;
-    width: 100px;
+    padding-left: 75px;
+  }
+  .tabmenu > a {
     color: inherit;
     text-decoration: inherit;
+    /* transition-duration: 0.5s; */
     font-weight: bold;
-    padding-left: 40px;
-}
-.submenu {
+  }
+  .submenu {
     background-color: white;
     height: 0px;
     transition-duration: 1s;
@@ -109,10 +101,9 @@ header .below{
     width: 70px;
     padding-top: 20px;
     padding: 0px 15px 0px 60px;
-    transition: 0.3s linear;
+    transition-duration: 0.3s;
   }
   .tabcontent a {
-    width: 80px;
     display: block;
     color: inherit;
     visibility: hidden;
@@ -121,7 +112,6 @@ header .below{
     text-align: center;
     margin-top: 20px;
     padding-left: 10px;
-    padding-right: 15px;
     transition-duration: 0.2s;
   }
   .menu:hover .submenu {
@@ -129,27 +119,27 @@ header .below{
     height: 200px;
     display: block;
   }
+  
   .menu:hover .tabcontent {
     visibility: visible;
-
   }
+  
   .menu:hover .tabcontent a {
     visibility: visible;
   }
-
-/*메인 아티클*/
-
-#main_image{
+  
+  /*메인 아티클*/
+  
+  #main_image {
     width: 1380px;
     height: 500px;
     margin-left: 70px;
     margin-top: 50px;
-   
-}
-main{
+  }
+  main {
     padding: 0px 170px 0px 170px;
-}
-#title{
+  }
+  #title {
     height: 100px;
     display: flex;
     justify-content: center;
@@ -158,51 +148,52 @@ main{
     font-weight: bold;
     margin-top: 50px;
     background-color: antiquewhite;
-}
-main>section>article{
+  }
+  main > section > article {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-main>section>article>div{
+  }
+  main > section > article > div {
     display: inline-block;
     /* width: 230px;
     height: 200px;          /*얘네들은 있으나 마나 밑에 1,2,3이랑 같은 효과*/
     /*background-color: tomato; */
     margin: 30px 15px 30px 15px;
     position: relative;
-}
-#first{
+  }
+  #first {
     width: 230px;
     height: 200px;
-}
-#second{
+  }
+  #second {
     width: 230px;
     height: 200px;
-}
-#third{
+  }
+  #third {
     width: 230px;
-    height: 200px; 
-}
-main>section>article>div>div{ /*자세히보기 absolute 는 이미지와 관계 가지기 위해*/
+    height: 200px;
+  }
+  main > section > article > div > div {
+    /*자세히보기 absolute 는 이미지와 관계 가지기 위해*/
     top: 105%;
     left: 58%;
     position: absolute;
     border: 3px solid lightgray;
     padding: 5px;
     box-sizing: border-box;
-}
-article>div>div>a{
+  }
+  article > div > div > a {
     color: inherit;
     text-decoration: inherit;
-    font-weight:bold
-}
-#awards{
+    font-weight: bold;
+  }
+  #awards {
     height: 100px;
-    background-color: darkcyan ;
+    background-color: darkcyan;
     margin-top: 50px;
-}
-#awards>a{
+  }
+  #awards > a {
     height: 100px;
     display: flex;
     justify-content: center;
@@ -210,8 +201,8 @@ article>div>div>a{
     font-size: 20px;
     font-weight: bold;
     text-decoration: inherit;
-}
-#secondtitle{
+  }
+  #secondtitle {
     height: 100px;
     display: flex;
     justify-content: center;
@@ -220,99 +211,97 @@ article>div>div>a{
     font-weight: bold;
     margin-top: 50px;
     background-color: blueviolet;
-}
-#mainsection{
+  }
+  #mainsection {
     font-size: 0;
     height: 1100px;
-}
-
-#secsection{ /*block 요소*/
+  }
+  
+  #secsection {
+    /*block 요소*/
     width: 50%;
     display: inline-block;
-}
-#secsection div:nth-child(1){
+  }
+  #secsection div:nth-child(1) {
     width: 400px;
     height: 700px;
     padding-left: 50px;
-}
-#secfirst{
+  }
+  #secfirst {
     width: 500px;
     height: 700px;
     margin-top: 50px;
-    
-}
-.sectionbelow{
+  }
+  .sectionbelow {
     width: 100%;
     height: 400px;
     display: flex;
     margin-top: 70px;
     padding-right: 42px;
     padding-bottom: 100px;
-    box-sizing: border-box; 
-}
-#secsecond{
+    box-sizing: border-box;
+  }
+  #secsecond {
     width: 200px;
     height: 150px;
     margin-top: 30px;
     display: inline-block;
-}
-#secthird{
+  }
+  #secthird {
     width: 200px;
     height: 150px;
     margin-top: 30px;
     display: inline-block;
-}
-#secarticle{
+  }
+  #secarticle {
     width: 50%;
     display: inline-block;
-    float: right; 
+  
     margin-top: 50px;
-    
-}
-#secfourth{
+  }
+  #secfourth {
     width: 100%;
     height: 100px;
-}
-.clearfix::after{
+  }
+  .clearfix::after {
     content: "";
     clear: both;
     display: block;
-}
-#secnews{
+  }
+  #secnews {
     width: 100%;
     height: 100px;
     background-color: brown;
     margin-top: 50px;
     position: relative;
-}
-#secnews>.secondnews{
+  }
+  #secnews > .secondnews {
     width: 150px;
     display: inline-block;
     background-color: yellow;
     box-sizing: border-box;
     top: 40%;
-    left:0%;
+    left: 0%;
     position: absolute;
-    
-}
-#secnews>.secondnews>a{  
+  }
+  #secnews > .secondnews > a {
     justify-content: center;
     align-items: center;
     color: inherit;
     text-decoration: inherit;
     font-weight: bolder;
     font-size: 20px;
-}
-#secnews>.extra{
+  }
+  #secnews > .extra {
     width: 100px;
     display: inline-block;
     background-color: yellow;
     box-sizing: border-box;
     top: 40%;
-    right:0%;
+    right: 0%;
     position: absolute;
-}
-#secnews>.extra>a{  
+  }
+  #secnews > .extra > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,78 +310,79 @@ article>div>div>a{
     font-weight: bolder;
     font-size: 20px;
     padding-left: 30px;
-}
-#secarticle article{
+  }
+  #secarticle article {
     background-color: beige;
-}
-#secarticle>article>div{
+  }
+  #secarticle > article > div {
+    border: 3px solid tomato;
     display: flex;
-}
-#secarticle>article>div>img{
+  }
+  #secarticle > article > div > img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
-} 
-#secarticle>article>div>div{
+  }
+  #secarticle > article > div > div {
     background-color: aliceblue;
     padding-top: 10px;
     box-sizing: border-box;
-}
-#secrecruit{
+  }
+  #secrecruit {
     width: 100%;
     height: 70px;
     background-color: coral;
     margin-top: 50px;
     position: relative;
-}
-#secrecruit .recruit{
+  }
+  #secrecruit .recruit {
     width: 250px;
     display: inline-block;
     background-color: yellow;
     box-sizing: border-box;
     top: 35%;
-    left:0%;
+    left: 0%;
     position: absolute;
-}
-#secrecruit .recruit>a{
+  }
+  #secrecruit .recruit > a {
     justify-content: center;
     align-items: center;
     color: inherit;
     text-decoration: inherit;
     font-weight: bolder;
     font-size: 20px;
-}
-#secrecruit .secextra{
+  }
+  #secrecruit .secextra {
     width: 100px;
     display: inline-block;
     background-color: yellow;
     box-sizing: border-box;
     top: 35%;
-    right:0%;
+    right: 0%;
     position: absolute;
-}
-#secrecruit a{
+  }
+  #secrecruit a {
     justify-content: center;
     align-items: center;
     color: inherit;
     text-decoration: inherit;
     font-weight: bolder;
     font-size: 20px;
-}
-.recruitp>p{
+  }
+  .recruitp > p {
     padding-top: 10px;
-}
-.recruitp>p>a{
+  }
+  .recruitp > p > a {
     color: inherit;
     text-decoration: inherit;
     font-size: 16px;
     padding-top: 10px;
-}
-.navfooter{
+  }
+  .navfooter {
     height: 70px;
     background-color: aliceblue;
-}
-.navfooter>a{
+  }
+  .navfooter > a {
     padding-top: 27px;
     display: inline-block;
     padding-left: 40%;
@@ -401,19 +391,19 @@ article>div>div>a{
     font-weight: bolder;
     font-size: 20px;
     box-sizing: border-box;
-}
-.footertop{
+  }
+  .footertop {
     margin-top: 80px;
     background-color: beige;
-}
-.footertop h1{
+  }
+  .footertop h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
     box-sizing: border-box;
-}
-.footertop h2{
+  }
+  .footertop h2 {
     font-size: 20px;
     font-weight: bolder;
     display: flex;
@@ -421,88 +411,85 @@ article>div>div>a{
     align-items: center;
     padding-top: 15px;
     box-sizing: border-box;
-}
-.footerbottom{
+  }
+  .footerbottom {
     background-color: gray;
     padding: 0px 350px 0px 350px;
-}
-.footernav{
+  }
+  .footernav {
     border-bottom: 1px solid white;
     height: 70px;
     position: relative;
-
-}
-.footernav span .ftmembership{
+  }
+  .footernav span .ftmembership {
     font-weight: bold;
     display: inline-block;
     box-sizing: border-box;
     top: 35%;
-    left:10%;
+    left: 10%;
     position: absolute;
     background-color: aqua;
     text-decoration: inherit;
-}
-.footernav span .money{
+  }
+  .footernav span .money {
     font-weight: bold;
     display: inline-block;
     box-sizing: border-box;
     top: 35%;
-    left:30%;
+    left: 30%;
     position: absolute;
     background-color: aqua;
     text-decoration: inherit;
-}
-.footernav span .more{
+  }
+  .footernav span .more {
     width: 50px;
     display: inline-block;
     background-color: yellow;
     box-sizing: border-box;
     top: 35%;
-    right:10%;
+    right: 10%;
     position: absolute;
-}
-.footerbelow{
-   height: 350px;
-}
-.footerbelow>div{
+  }
+  .footerbelow {
+    height: 350px;
+  }
+  .footerbelow > div {
     display: inline-block;
-}
-.ftlogo{
+  }
+  .ftlogo {
     width: 110px;
     height: 100px;
     display: block;
-    padding-bottom: 50px ;
+    padding-bottom: 50px;
     margin-right: 50px;
-    
-}
-.ftmiddle{
+  }
+  .ftmiddle {
     width: 500px;
     display: inline-block;
     margin-right: 30px;
     padding-top: 50px;
-}
-.ftmiddle p{
+  }
+  .ftmiddle p {
     background-color: aquamarine;
-}
-.ftmiddle a{
+  }
+  .ftmiddle a {
     color: inherit;
     text-decoration: inherit;
     font-weight: bold;
     margin-right: 10px;
-}
-.ftmiddle address{
+  }
+  .ftmiddle address {
     padding-top: 20px;
     font-size: 14px;
-}
-.footerbottom .ftright {
+  }
+  .footerbottom .ftright {
     display: inline-block;
     width: 70px;
     margin-left: 50px;
     box-sizing: border-box;
-    
-}
-.footerbottom .ftright .ftlogolast{
+  }
+  .footerbottom .ftright .ftlogolast {
     width: 15px;
     height: 15px;
     border-radius: 5px;
-}
+  }
