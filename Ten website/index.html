@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ten</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <!-- 짙은 바 색상  -->
+        <div class="flex">
+            <a href=""><img src="http://img.echosting.cafe24.com/api/store/images/ico_frame_desktop.png" alt="header_desktop"></a>
+            <a href=""><img src="http://img.echosting.cafe24.com/api/store/images/ico_frame_mobile.png" alt="header_mobile"></a>
+        </div>
+        <!-- 헤더 네브 바 카테고리 있음. -->
+        <nav class="clearfix">
+           <div class="container-left ">
+               <a href=""><img src="http://ecudemo225158.cafe24.com/0dzimg/top_logo_w291211_logo.png" alt="logo"></a>
+               <div class="menu-list">
+                   <ul class="flex">
+                       <li><a href="">ALL</a></li>
+                       <li><a href="">상품카테고리</a></li>
+                       <li><a href="">상품카테고리</a></li>
+                       <li><a href="">상품카테고리</a></li>
+                       <li><a href="">상품카테고리</a></li>
+                       <li><a href="">상품카테고리</a></li>
+                       <li><a href="">상품카테고리</a></li>
+                   </ul>
+                   <!-- 메뉴 호버 했을 시 밑 카테고리-->
+                   <div class="sub-menu">
+                       <ul> 상품카테고리
+                           <li>Jackets</li>
+                           <li>Shoes</li>
+                           <li>Bottom</li>
+                       </ul>
+                       <ul> 상품카테고리
+                           <li>Accessories</li>
+                           <li>Pants</li>
+                           <li>Top</li>
+                       </ul>
+                       <ul> 상품카테고리
+                           <li>Sunglasses</li>
+                           <li>Earrings</li>
+                           <li>Cap</li>
+                       </ul>
+                       <ul> 상품카테고리
+                           <li>Rings</li>
+                           <li>Belts</li>
+                           <li>Trunks</li>
+                       </ul>
+                       <ul> 상품카테고리
+                           <li>Neckclaces</li>
+                           <li>Socks</li>
+                           <li>Shorts</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+            <!-- 네브 오른쪽 바 -->
+            <div class="container-right flex ">
+                <a href="" class="modal-open"><img  src="http://ecudemo225158.cafe24.com/0dzimg/top_search.png" alt="search"></a>
+                <a href=""><img src="http://ecudemo225158.cafe24.com/0dzimg/top_people.png" alt="info"></a>
+                <a href=""><img src="http://ecudemo225158.cafe24.com/0dzimg/top_cart.png" alt="cart"></a>
+                <a href=""><img src="http://ecudemo225158.cafe24.com/0dzimg/top_recent.png" alt="back"></a>
+            </div>
+        </nav>
+    </header>
+    <div id="modal" class="flex">
+        <div class="modal-bg ">
+            <div class="modal-content flex">
+                <form action="">
+                    <input type="text"  placeholder="검색어를 입력하시렵니까?">
+                    <button type="submit"><img src="http://ecudemo225158.cafe24.com/0dzimg/top_search_w.png" alt="search_btn"></button>
+                </form>
+            </div>
+            <button class="modal-close">x</button>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</script>
+</html>
