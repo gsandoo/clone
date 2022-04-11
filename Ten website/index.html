@@ -60,25 +60,26 @@
            </div>
             <!-- 네브 오른쪽 바 -->
             <div class="container-right flex ">
-                <a href="" class="modal-open"><img  src="http://ecudemo225158.cafe24.com/0dzimg/top_search.png" alt="search"></a>
+                <button class="btn"><img src="http://ecudemo225158.cafe24.com/0dzimg/top_search.png" alt="search"></button>
                 <a href=""><img src="http://ecudemo225158.cafe24.com/0dzimg/top_people.png" alt="info"></a>
                 <a href=""><img src="http://ecudemo225158.cafe24.com/0dzimg/top_cart.png" alt="cart"></a>
                 <a href=""><img src="http://ecudemo225158.cafe24.com/0dzimg/top_recent.png" alt="back"></a>
             </div>
         </nav>
     </header>
-    <div id="modal" class="flex">
-        <div class="modal-bg ">
-            <div class="modal-content flex">
-                <form action="">
-                    <input type="text"  placeholder="검색어를 입력하시렵니까?">
-                    <button type="submit"><img src="http://ecudemo225158.cafe24.com/0dzimg/top_search_w.png" alt="search_btn"></button>
-                </form>
-            </div>
-            <button class="modal-close">x</button>
+    <!-- 모달 -->
+    <div class="modal hidden">
+        <div class="modal__background"></div>
+        <div class="modal__content flex">
+            <form action="">
+                <input type="text"  placeholder="검색어를 입력하시렵니까?">
+                <button type="submit" class="submit_btn"><img src="http://ecudemo225158.cafe24.com/0dzimg/top_search_w.png" alt="search_btn"></button>
+            </form>
+          <button class="close">X</button>
         </div>
-    </div>
+    </div>    
 </body>
-<script src="./index.js"></script>
+<script src="./index.js">
 </script>
+
 </html>

@@ -47,6 +47,7 @@ nav{
     margin-left: 2em;
     font-weight: bold;
 }
+/* 서브메뉴 창 */
 .sub-menu{
     display: none;
     position: absolute;
@@ -66,6 +67,7 @@ nav{
 }
 .menu-list:hover .sub-menu{
     display: flex;
+    padding-left: 50px;
     margin-top: 3em;
     
 }
@@ -79,46 +81,78 @@ nav{
     width: 2em;
     margin-right: 2em;
 }
+.btn{
+    width: 33px;
+    height: 37px;
+    margin-right: 2.1em;
+    border: none;
+    background-color: inherit;
+}
+.btn img{
+    width: 32px;
+    height: 32px;
+}
 /* 모달 */
 
-#modal{
-    display: none;
-    background-color:gray;
-    opacity: 0.9;
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .modal__background {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-}
-.modal-bg{
-    
-}
-.modal-content{
-}
-.modal-content input{
+  }
+.modal__content {
+    width: 75%;
+    text-align: center;
+    position: relative;
+
+    border-radius: 10px;
+    top: 0;
+    padding: 10px 25px;
+  }
+.modal__content input{
     width: 50vw;
     height: 50px;
     border:none;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid black;
     background-color: inherit;
     padding: 40px;
     vertical-align: top;
     font-size: 30px;
 }
-
-.modal-content button{
-    margin-top: 1em;
-    margin-left: 3em;
+.submit_btn{
+    margin: 0.5em 0 0 2em;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
     background-color: inherit;
-    border: none;
-}
-.modal-close{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 10%;
-    left: 93%;
     
 }
+.close{
+    width: 70px;
+    height: 50px;
+    margin-left: 10em;
+    background-color: inherit;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.hidden {
+    display: none;
+  }
+
+
+
+
 .clearfix::after{
     clear: both;
     content: " ";
