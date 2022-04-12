@@ -15,6 +15,7 @@ header{
     top: 0;
     left: 0;
     border-bottom: 3px solid lightgrey;
+    z-index: 1000;
 }
 header>div{
     background-color: gray;
@@ -44,6 +45,10 @@ nav{
     margin-right: 1em;
     font-size: 16px;
 }
+.menu-list>ul>li>a{
+    color: inherit;
+    text-decoration: inherit;
+}
 .container-left>.menu-list>ul>li{
     margin-left: 2em;
     font-weight: bold;
@@ -61,8 +66,7 @@ nav{
     width: 8em;
     margin-right: 3em;
     font-weight: bold;
-    color: inherit;
-    text-decoration: inherit;
+    
 }
 .sub-menu>ul>li{
     font-weight:400;
@@ -106,9 +110,10 @@ nav{
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
   }
   .modal__background {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -162,29 +167,155 @@ nav{
 /* best item */
 
 #bestItem{
-    width: 100%;
-    padding: 5em;
-
+    margin-top: 10em;
+    
 }
-#bestItem>img{
+.parent{
     width: 400px;
     height: 500px;
+    position: relative;
     margin-right: 20px;
 }
-.description{
+.parent img{
+    width: 400px;
+    height: 500px;
+}
+.parent button{
+    background-color: inherit;
+    border: none;
+}
+.parent .thumbs{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    transition: 0.6s ease-out;
+    visibility: hidden;
     display: flex;
+    border: 3px solid black;
+}
+.parent .thumbs img{
+    width: 2em;
+    height: 2em;  
+}
+/* 좋아요 같은구간 4번 */
+.like{
+    width: 2em;
+    height: 2.2em;
+    position:relative;
+  }
+.like img{
+    width: 2em;
+    height: 4px;
+    
+  }
+.dislike{
+    width: 2em;
+    height: 2.2em;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+  }
+.dislike img {
+    width: 2em;
+    height: 3em;
+  }
+  .like2{
+    width: 2em;
+    height: 2.2em;
+    position:relative;
+  }
+.like2 img{
+    width: 2em;
+    height: 4px;
+    
+  }
+.dislike2{
+    width: 2em;
+    height: 2.2em;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+  }
+.dislike2 img {
+    width: 2em;
+    height: 3em;
+  }
+  .like3{
+    width: 2em;
+    height: 2.2em;
+    position:relative;
+  }
+.like3 img{
+    width: 2em;
+    height: 4px;
+    
+  }
+.dislike3{
+    width: 2em;
+    height: 2.2em;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+  }
+.dislike3 img {
+    width: 2em;
+    height: 3em;
+  }
+.like4{
+    width: 2em;
+    height: 2.2em;
+    position:relative;
+  }
+.like4 img{
+    width: 2em;
+    height: 4px;
+    
+  }
+.dislike4{
+    width: 2em;
+    height: 2.2em;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+  }
+.dislike4 img {
+    width: 2em;
+    height: 3em;
+  }
+.parent:hover .thumbs{
+    display: flex;
+    position: absolute;
+    top:80%;
+    left: 40%;
+    visibility: visible;
+}
+.parent:hover .thumbs img{
+    width: 2em;
+    height: 2em;
+}
+
+.description-sub{
+    display: flex;
+    padding-left: 1em;
+
 }
 .description div{
-    width: 25em;
+    width: 24.7em;
     margin-right: 1.6em;
-    padding: 2em 0 1em 0;
+    padding: 2em 0 1em 0em;
     border-bottom: 1px solid lightgray;
 }
 .description div h1 {
     font-size: 13px;
+    padding-left: 1em;
 }
-.description p{
-    width: 33em;
+.description-sub p{
+    width: 32.7em;
     margin-top: 2em;
     font-size: 13px;
+   padding-left: 1em;
 }
