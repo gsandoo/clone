@@ -40,6 +40,7 @@ nav{
 }
 .menu-list{
     position: relative;
+    padding: 2em 0 2em 0;
 }
 .menu-list>ul>li{
     margin-right: 1em;
