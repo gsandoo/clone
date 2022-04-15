@@ -197,6 +197,9 @@ nav{
     width: 2em;
     height: 2em;  
 }
+.parent .thumbs:hover{
+    cursor: pointer;
+}
 /* 좋아요 같은구간 4번 */
 .like{
     width: 2em;
@@ -220,17 +223,17 @@ nav{
     width: 2em;
     height: 3em;
   }
-  .like2{
+.like-two{
     width: 2em;
     height: 2.2em;
     position:relative;
   }
-.like2 img{
+.like-two img{
     width: 2em;
     height: 4px;
     
   }
-.dislike2{
+.dislike-two{
     width: 2em;
     height: 2.2em;
     position:absolute;
@@ -238,21 +241,21 @@ nav{
     left: 0;
     z-index:-1;
   }
-.dislike2 img {
+.dislike-two img {
     width: 2em;
     height: 3em;
   }
-  .like3{
+.like-three{
     width: 2em;
     height: 2.2em;
     position:relative;
   }
-.like3 img{
+.like-three img{
     width: 2em;
     height: 4px;
     
   }
-.dislike3{
+.dislike-three{
     width: 2em;
     height: 2.2em;
     position:absolute;
@@ -260,21 +263,21 @@ nav{
     left: 0;
     z-index:-1;
   }
-.dislike3 img {
+.dislike-three img {
     width: 2em;
     height: 3em;
   }
-.like4{
+.like-four{
     width: 2em;
     height: 2.2em;
     position:relative;
   }
-.like4 img{
+.like-four img{
     width: 2em;
     height: 4px;
     
   }
-.dislike4{
+.dislike-four{
     width: 2em;
     height: 2.2em;
     position:absolute;
@@ -282,7 +285,7 @@ nav{
     left: 0;
     z-index:-1;
   }
-.dislike4 img {
+.dislike-four img {
     width: 2em;
     height: 3em;
   }
@@ -301,15 +304,14 @@ nav{
 .description-sub{
     display: flex;
     padding-left: 1em;
-
 }
-.description div{
+.description>div{
     width: 24.7em;
     margin-right: 1.6em;
     padding: 2em 0 1em 0em;
     border-bottom: 1px solid lightgray;
 }
-.description div h1 {
+.description>div>h1 {
     font-size: 13px;
     padding-left: 1em;
 }

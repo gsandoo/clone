@@ -1,14 +1,14 @@
 const $hi =document.querySelector(".like")
 const $hello =document.querySelector(".dislike")
 
-const $hi2 =document.querySelector(".like2")
-const $hello2 =document.querySelector(".dislike2")
+const $hi2 =document.querySelector(".like-two")
+const $hello2 =document.querySelector(".dislike-two")
 
-const $hi3 =document.querySelector(".like3")
-const $hello3 =document.querySelector(".dislike3")
+const $hi3 =document.querySelector(".like-three")
+const $hello3 =document.querySelector(".dislike-three")
 
-const $hi4 =document.querySelector(".like4")
-const $hello4 =document.querySelector(".dislike4")
+const $hi4 =document.querySelector(".like-four")
+const $hello4 =document.querySelector(".dislike-four")
 
 function change(){
   $hi.style.zIndex="-1";
