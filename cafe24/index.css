@@ -53,12 +53,14 @@ main{
     cursor: pointer;
 }
 #further{
+    width: 50vw;
+    position: absolute;
+    top: 70%;
+    z-index: 1;
+}
+#further > p {
     font-size: 10vw;
     font-weight: bold;
-    position: absolute;
-    top: 73%;
-    left: 3%;
-    z-index: 1;
 }
 .main_right {
     width: 50%;
@@ -74,7 +76,7 @@ main{
 }
 .tab{
     display: flex;
-    margin-left: 55px;
+    margin-left: 10rem;
     width: 100%;
     position: absolute;
     top: 5%;
